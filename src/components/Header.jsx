@@ -56,7 +56,7 @@ function useUserSession(initialUser) {
 
 export default function Header({initialUser}) {
 
-	const user = useUserSession(initialUser) ;
+	<Header initialUser={currentUser?.toJSON()} />
 
 	const handleSignOut = event => {
 		event.preventDefault();
